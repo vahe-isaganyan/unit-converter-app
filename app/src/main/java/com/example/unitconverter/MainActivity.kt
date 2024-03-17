@@ -3,9 +3,14 @@ package com.example.unitconverter
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowDropDown
+import androidx.compose.material3.Button
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
@@ -42,8 +47,21 @@ fun UnitConverter() {
             //Placeholder onValueChange ***
         })
         Row {
-            //UI elements stacked next to one another
+            Box {
+                Button(onClick = { /*TODO*/ }) {
+                    Text("Select")
+                    Icon(Icons.Default.ArrowDropDown, contentDescription = "Drop down arrow")
+                }
 
+            }
+            Box {
+                Button(onClick = { /*TODO*/ }) {
+                    Text("Select")
+                    Icon(Icons.Default.ArrowDropDown, contentDescription = "Drown down arrow")
+
+                }
+
+            }
         }
         Text("Result:")
     }
